@@ -361,7 +361,7 @@ const HeaderContainer = styled.header`
         transform: translateX(-50%);
         transition: all 350ms ease-in;
         @media (max-width: 680px) {
-            bottom: -200px;
+            bottom: -185px;
         }
         .buttonScrollTop {
             position: relative;
