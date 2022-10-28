@@ -70,7 +70,7 @@ const Text = () => {
                 ''
             }
             <h3 data-aos="fade-up" >Ready to create amazing experiences together?</h3>
-            <a data-aos="fade-up"  href="mailto:mail@mail.com">ask for our portfolio</a>
+            <a data-aos="fade-up" data-aos-offset="100"  href="mailto:mail@mail.com">ask for our portfolio</a>
         </TextContainer>
     )
 }
@@ -99,9 +99,10 @@ const TextContainer = styled.section`
         font-family: 'Trade Gothic Next LT Pro', sans-serif;
         font-weight: 300;
         font-style: italic;
-        font-size: 54px;
-        text-align: left;
-        padding-left: 30px;
+        font-size: 3.6vw;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
         padding-bottom: 250px;
     }
 
