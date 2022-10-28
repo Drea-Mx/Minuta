@@ -233,6 +233,8 @@ const HeaderContainer = styled.header`
     display: flex;
     position: relative;
     .container {
+        width: 100vw;
+        overflow-x: hidden;
     }
 
     .img {

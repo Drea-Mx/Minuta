@@ -55,7 +55,7 @@ html {
         color: var(--white);
         font-family: var(--regular);
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        width: 100%;
+        width: 100vw;
         overflow-x: hidden;
         position: relative;
         -webkit-font-smoothing: antialiased;

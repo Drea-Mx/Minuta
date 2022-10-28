@@ -148,6 +148,7 @@ const TextContainer = styled.section`
         }
     }
     .who {
+        position: relative;
         @media (max-width: 680px) {
             margin-top: 50px;
         }
@@ -160,6 +161,7 @@ const TextContainer = styled.section`
             cursor: pointer;
             &:hover {
                 .img {
+                    transform: translateY(-50%);
                     display: block !important;
                 }
             }
