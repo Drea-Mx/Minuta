@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Misasam';
+    src: url('Misasam-Regular.woff2') format('woff2'),
+        url('Misasam-Regular.woff') format('woff'),
+        url('Misasam-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tartuffo';
+    src: url('Tartuffo-ThinItalic.woff2') format('woff2'),
+        url('Tartuffo-ThinItalic.woff') format('woff'),
+        url('Tartuffo-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
