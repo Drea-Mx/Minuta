@@ -70,7 +70,7 @@ const Text = () => {
                 ''
             }
             <h3 data-aos="fade-up" >Ready to create amazing experiences together?</h3>
-            <a data-aos="fade-up" data-aos-offset="100"  href="mailto:mail@mail.com">ask for our portfolio</a>
+            <a href="mailto:mail@mail.com">ask for our portfolio</a>
         </TextContainer>
     )
 }
@@ -81,6 +81,9 @@ const TextContainer = styled.section`
     position: relative;
     .fix {
         bottom: 40%;
+        @media (max-width: 680px) {
+            bottom: 58%; 
+        }
     }
     h1 {
         font-size: 9vw;
@@ -93,6 +96,7 @@ const TextContainer = styled.section`
         position: fixed;
         bottom: -50%;
         transition: bottom 500ms ease-in-out;
+        
     }
     
     h2.subtitle {
@@ -104,6 +108,9 @@ const TextContainer = styled.section`
         padding-left: 100px;
         padding-right: 100px;
         padding-bottom: 250px;
+        @media (max-width: 680px) {
+            padding-bottom: 850px;
+        }
     }
 
 
@@ -114,6 +121,9 @@ const TextContainer = styled.section`
         padding-left: 30px;
         margin-top: 650px;
         line-height: 1;
+        @media (max-width: 680px) {
+            margin-top: 100px;
+        }
     }
 
     button {
@@ -132,12 +142,15 @@ const TextContainer = styled.section`
         padding-left: 30px;
         margin-top: 0px;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
         &:hover {
             text-decoration: underline;
         }
     }
     .who {
+        @media (max-width: 680px) {
+            margin-top: 50px;
+        }
         h2 {
             font-family: 'Trade Gothic Next LT Pro', sans-serif;
             font-weight: 300;

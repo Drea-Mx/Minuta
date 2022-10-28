@@ -207,13 +207,13 @@ const Header = () => {
                 
             </div>
             <div className={scroll ? 'change containerButton' : 'containerButton'} >
-                <a  href='#bot' className="buttonScrollTop">
+                <button className="buttonScrollTop">
                     <span>Scroll</span>
                     <span>Down</span>
                     <span>to</span>
                     <span>Discover</span>
                     <span>More</span>
-                </a>
+                </button>
                 <a  href='#top' className="buttonScrollBot">
                     <span>Go</span>
                     <span>Back</span>
@@ -334,6 +334,9 @@ const HeaderContainer = styled.header`
     }
     .shrink {
         bottom: calc(100% - 430px) !important;
+        @media (max-width: 680px) {
+            bottom: calc(75%) !important;
+        }
     }
     .logo {
         position: fixed;
@@ -346,6 +349,9 @@ const HeaderContainer = styled.header`
     }
     .change {
         bottom: 94% !important;
+        @media (max-width: 680px) {
+            bottom: 90% !important;
+        }
     }
     .containerButton {
         z-index: 3;
@@ -354,11 +360,17 @@ const HeaderContainer = styled.header`
         left: 50%;
         transform: translateX(-50%);
         transition: all 350ms ease-in;
+        @media (max-width: 680px) {
+            bottom: -150px;
+        }
         .buttonScrollTop {
             position: relative;
             display: block;
             margin-bottom: 100px;
             text-align: center;
+            @media (max-width: 680px) {
+                margin-bottom: 200px;
+            }
             span {
                 text-transform: uppercase;
                 position: relative;
@@ -377,6 +389,9 @@ const HeaderContainer = styled.header`
                     top: 15px;
                 }
             }
+        }
+        button {
+            color: white;
         }
         .buttonScrollBot {
             position: relative;
