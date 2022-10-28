@@ -162,6 +162,7 @@ const TextContainer = styled.section`
             &:hover {
                 .img {
                     transform: translateY(-50%);
+                    transform: translateX(-50%);
                     display: block !important;
                 }
             }
