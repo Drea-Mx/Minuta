@@ -69,8 +69,8 @@ const Text = () => {
                 :
                 ''
             }
-            <h3 data-aos="fade-up" >Ready to create amazing experiences together?</h3>
-            <a href="mailto:mail@mail.com">ask for our portfolio</a>
+            <h3>Ready to create amazing experiences together?</h3>
+            <a href="mailto:info@minuta.design">ask for our portfolio</a>
         </TextContainer>
     )
 }

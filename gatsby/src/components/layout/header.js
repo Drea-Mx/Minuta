@@ -36,7 +36,7 @@ const Header = () => {
                     <div className="image1 img">
                         <StaticImage
                             src="../../assets/images/loop/img_01.png"
-                            alt="A dinosaur"
+                            alt="Esfera disco Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={250}
@@ -46,7 +46,7 @@ const Header = () => {
                     <div className="image2 img">
                         <StaticImage
                             src="../../assets/images/loop/img_02.png"
-                            alt="A dinosaur"
+                            alt="Perrito Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={284}
@@ -56,7 +56,7 @@ const Header = () => {
                     <div className="image3 img">
                         <StaticImage
                             src="../../assets/images/loop/img_03.jpg"
-                            alt="A dinosaur"
+                            alt="Mujer en caballo Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={316}
@@ -66,7 +66,7 @@ const Header = () => {
                     <div className="image4 img">
                         <StaticImage
                             src="../../assets/images/loop/img_04.png"
-                            alt="A dinosaur"
+                            alt="Bebida Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={356}
@@ -76,7 +76,7 @@ const Header = () => {
                     <div className="image5 img">
                         <StaticImage
                             src="../../assets/images/loop/img_05.jpg"
-                            alt="A dinosaur"
+                            alt="Copas Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={420}
@@ -86,7 +86,7 @@ const Header = () => {
                     <div className="image6 img">
                         <StaticImage
                             src="../../assets/images/loop/img_06.jpg"
-                            alt="A dinosaur"
+                            alt="Candelabro Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={323}
@@ -96,7 +96,7 @@ const Header = () => {
                     <div className="image7 img">
                         <StaticImage
                             src="../../assets/images/loop/img_07.jpg"
-                            alt="A dinosaur"
+                            alt="Foto Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={293}
@@ -106,7 +106,7 @@ const Header = () => {
                     <div className="image8 img">
                         <StaticImage
                             src="../../assets/images/loop/img_08.png"
-                            alt="A dinosaur"
+                            alt="Toca discos Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={314}
@@ -116,7 +116,7 @@ const Header = () => {
                     <div className="image9 img">
                         <StaticImage
                             src="../../assets/images/loop/img_09.jpg"
-                            alt="A dinosaur"
+                            alt="David Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={305}
@@ -126,7 +126,7 @@ const Header = () => {
                     <div className="image10 img">
                         <StaticImage
                             src="../../assets/images/loop/img_10.jpg"
-                            alt="A dinosaur"
+                            alt="Foto Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={258}
@@ -136,7 +136,7 @@ const Header = () => {
                     <div className="image11 img">
                         <StaticImage
                             src="../../assets/images/loop/img_11.png"
-                            alt="A dinosaur"
+                            alt="Vaso Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={198}
@@ -146,7 +146,7 @@ const Header = () => {
                     <div className="image12 img">
                         <StaticImage
                             src="../../assets/images/loop/img_12.jpg"
-                            alt="A dinosaur"
+                            alt="Foto Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={460}
@@ -156,7 +156,7 @@ const Header = () => {
                     <div className="image13 img">
                         <StaticImage
                             src="../../assets/images/loop/img_13.jpg"
-                            alt="A dinosaur"
+                            alt="Persona Bailando Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={292}
@@ -166,7 +166,7 @@ const Header = () => {
                     <div className="image14 img">
                         <StaticImage
                             src="../../assets/images/loop/img_14.jpg"
-                            alt="A dinosaur"
+                            alt="DJ Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={436}
@@ -176,7 +176,7 @@ const Header = () => {
                     <div className="image15 img">
                         <StaticImage
                             src="../../assets/images/loop/img_15.png"
-                            alt="A dinosaur"
+                            alt="Lentes Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={471}
@@ -186,7 +186,7 @@ const Header = () => {
                     <div className="image16 img">
                         <StaticImage
                             src="../../assets/images/loop/img_16.jpg"
-                            alt="A dinosaur"
+                            alt="Festival Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={457}
@@ -196,7 +196,7 @@ const Header = () => {
                     <div className="image17 img">
                         <StaticImage
                             src="../../assets/images/loop/img_17.jpg"
-                            alt="A dinosaur"
+                            alt="Foto Minuta"
                             placeholder="blurred"
                             layout="fixed"
                             width={351}
@@ -361,7 +361,7 @@ const HeaderContainer = styled.header`
         transform: translateX(-50%);
         transition: all 350ms ease-in;
         @media (max-width: 680px) {
-            bottom: -150px;
+            bottom: -200px;
         }
         .buttonScrollTop {
             position: relative;
