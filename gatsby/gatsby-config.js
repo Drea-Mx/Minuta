@@ -3,8 +3,8 @@ module.exports = {
     title: `Minuta`,
     description: `Setting the scene, below the line.`,
     twitterUsername: `@gatsbyjs`,
-    image: `image.png`,
-    siteUrl: `https://www.yourdomain.tld`,
+    image: `/image.png`,
+    siteUrl: `https://lovely-tanuki-74d8d1.netlify.app`,
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
