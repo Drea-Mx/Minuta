@@ -146,6 +146,10 @@ const TextContainer = styled.section`
         &:hover {
             text-decoration: underline;
         }
+        @media (max-width: 680px) {
+            margin-bottom: 150px;
+            margin-top: 100px;
+        }
     }
     .who {
         position: relative;

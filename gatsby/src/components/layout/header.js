@@ -41,6 +41,7 @@ const Header = () => {
                             layout="fixed"
                             width={250}
                             height={248.7}
+                            loading='eager'
                         />
                     </div>
                     <div className="image2 img">
@@ -51,6 +52,8 @@ const Header = () => {
                             layout="fixed"
                             width={284}
                             height={284}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image3 img">
@@ -61,6 +64,8 @@ const Header = () => {
                             layout="fixed"
                             width={316}
                             height={399}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image4 img">
@@ -71,6 +76,8 @@ const Header = () => {
                             layout="fixed"
                             width={356}
                             height={356}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image5 img">
@@ -81,6 +88,8 @@ const Header = () => {
                             layout="fixed"
                             width={420}
                             height={278}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image6 img">
@@ -91,6 +100,8 @@ const Header = () => {
                             layout="fixed"
                             width={323}
                             height={506}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image7 img">
@@ -101,6 +112,8 @@ const Header = () => {
                             layout="fixed"
                             width={293}
                             height={437}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image8 img">
@@ -111,6 +124,8 @@ const Header = () => {
                             layout="fixed"
                             width={314}
                             height={314}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image9 img">
@@ -121,6 +136,8 @@ const Header = () => {
                             layout="fixed"
                             width={305}
                             height={317}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image10 img">
@@ -131,6 +148,8 @@ const Header = () => {
                             layout="fixed"
                             width={258}
                             height={389.51}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image11 img">
@@ -141,6 +160,8 @@ const Header = () => {
                             layout="fixed"
                             width={198}
                             height={261}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image12 img">
@@ -151,6 +172,8 @@ const Header = () => {
                             layout="fixed"
                             width={460}
                             height={305}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image13 img">
@@ -161,6 +184,8 @@ const Header = () => {
                             layout="fixed"
                             width={292}
                             height={410}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image14 img">
@@ -171,6 +196,8 @@ const Header = () => {
                             layout="fixed"
                             width={436}
                             height={289}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image15 img">
@@ -181,6 +208,8 @@ const Header = () => {
                             layout="fixed"
                             width={471}
                             height={216}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image16 img">
@@ -191,6 +220,8 @@ const Header = () => {
                             layout="fixed"
                             width={457}
                             height={306}
+                            loading='eager'
+
                         />
                     </div>
                     <div className="image17 img">
@@ -201,6 +232,8 @@ const Header = () => {
                             layout="fixed"
                             width={351}
                             height={408}
+                            loading='eager'
+
                         />
                     </div>
                 </div>
@@ -229,6 +262,7 @@ const Header = () => {
 }
 
 const HeaderContainer = styled.header`
+    width: 100vw;
 .images {
     display: flex;
     position: relative;
@@ -242,13 +276,16 @@ const HeaderContainer = styled.header`
         z-index: 3 !important;
         animation: moveX 40s ease-in-out infinite forwards;
         overflow: hidden;
+        @media (max-width: 680px) {
+            animation: moveXMovil 30s ease-in-out infinite forwards;
+        }
         img {
             transition: transform 350ms ease-in-out;
+            @media (max-width: 680px) {
+                transform: scale(.5) !important;
+            }
         }
         &:hover {
-            img {
-                transform: scale(1.2);
-            }
         }
     }
     .image1 {
@@ -329,6 +366,20 @@ const HeaderContainer = styled.header`
         }
         50% {
             transform: translateX(-3000px);
+            @media (max-width: 680px) {
+                transform: translateX(-4000px) !important;
+            }
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+@keyframes moveXMovil {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+                transform: translateX(-3550px);
         }
         100% {
             transform: translateX(0px);
