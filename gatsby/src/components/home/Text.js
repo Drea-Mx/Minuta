@@ -30,10 +30,10 @@ const Text = () => {
         <TextContainer id='bot'>
             <h1 className={scroll ? 'fix' : ''} >Setting the scene, below the line.</h1>
             <h2 data-aos="fade-up" data-aos-offset="250" className="subtitle">Experience-focused creative studio that believes in 1:1 interactions, committed to close the gap between  people, products, events and happenings.</h2>
-            <button data-aos="fade-up" onClick={() => showWho(!who)}>So, who are we?</button>
+            <button className="members" data-aos="fade-up" onClick={() => showWho(!who)}>So, who are we?</button>
             {who ?
                 <div className="who">
-                    <h2 onMouseDown={() => showImgMi(!imgMi)}>Miralda Sandoval,
+                    <button onMouseDown={() => showImgMi(!imgMi)}>Miralda Sandoval,
                         <div className={imgMi ? 'img showw' : 'img'}>
                             <StaticImage
                                 src="../../assets/images/miralda.jpg"
@@ -44,8 +44,8 @@ const Text = () => {
                                 height={594}
                             />
                         </div>
-                    </h2>
-                    <h2 onMouseDown={() => showImgAr(!imgAr)}>Arturo Ramirez,
+                    </button>
+                    <button onMouseDown={() => showImgAr(!imgAr)}>Arturo Ramirez,
                         <div className={imgAr ? 'img showw' : 'img'}>
                             <StaticImage
                                 src="../../assets/images/arturo.jpg"
@@ -56,8 +56,8 @@ const Text = () => {
                                 height={594}
                             />
                         </div>
-                    </h2>
-                    <h2 onMouseDown={() => showImgMe(!imgMe)}>&    Medu Moreno
+                    </button>
+                    <button onMouseDown={() => showImgMe(!imgMe)}>&    Medu Moreno
                         <div className={imgMe ? 'img showw' : 'img'}>
                             <StaticImage
                                 src="../../assets/images/medu.jpg"
@@ -68,7 +68,7 @@ const Text = () => {
                                 height={594}
                             />
                         </div>
-                    </h2>
+                    </button>
                 </div>
                 :
                 ''
@@ -143,7 +143,7 @@ const TextContainer = styled.section`
         }
     }
 
-    button {
+    button.members {
         font-size: 8.5vw;
         font-family: var(--italic);
         color: white;
@@ -167,8 +167,8 @@ const TextContainer = styled.section`
             text-decoration: underline;
         }
         @media (max-width: 680px) {
-            margin-bottom: 150px;
-            margin-top: 100px;
+            margin-bottom: 30px;
+            margin-top: 20px;
         }
     }
     .who {
@@ -179,7 +179,7 @@ const TextContainer = styled.section`
             justify-content: center;
             align-items: center;
         }
-        h2 {
+        button {
             font-family: 'Trade Gothic Next LT Pro', sans-serif;
             font-weight: 300;
             font-size: 5vw;
@@ -196,6 +196,9 @@ const TextContainer = styled.section`
             &:hover {
                 .img {
                     display: block;
+                    @media (max-width: 680px) {
+                        display: none;
+                    }
                 }
             }
             &:nth-child(1) {

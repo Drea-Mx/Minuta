@@ -1,7 +1,7 @@
 import React from 'react'
 import Text from '../components/home/Text';
 import Layout from "../components/layout/layout";
-import { SEO } from '../components/layout/seo';
+import { Seo } from '../components/layout/Seo';
 
 
 const IndexPage = () => {
@@ -15,7 +15,7 @@ const IndexPage = () => {
 }
 
 export const Head = () => (
-  <SEO title='Minuta' description='Setting the scene, below the line.' image='image.png' />
+  <Seo title='Minuta' description='Setting the scene, below the line.' image='image.png' />
 )
 
 
