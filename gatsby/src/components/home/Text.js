@@ -13,6 +13,10 @@ const Text = () => {
 
       const [who, showWho] = useState(false);
 
+      const [imgMi, showImgMi] = useState(false);
+      const [imgAr, showImgAr] = useState(false);
+      const [imgMe, showImgMe] = useState(false);
+
       const [scroll, setScroll] = useState(false);
 
       useEffect(() => {
@@ -29,8 +33,8 @@ const Text = () => {
             <button data-aos="fade-up" onClick={() => showWho(!who)}>So, who are we?</button>
             {who ?
                 <div className="who">
-                    <h2>Miralda Sandoval,
-                        <div className="img">
+                    <h2 onMouseDown={() => showImgMi(!imgMi)}>Miralda Sandoval,
+                        <div className={imgMi ? 'img showw' : 'img'}>
                             <StaticImage
                                 src="../../assets/images/miralda.jpg"
                                 alt="A dinosaur"
@@ -41,8 +45,8 @@ const Text = () => {
                             />
                         </div>
                     </h2>
-                    <h2>Arturo Ramirez,
-                        <div className="img">
+                    <h2 onMouseDown={() => showImgAr(!imgAr)}>Arturo Ramirez,
+                        <div className={imgAr ? 'img showw' : 'img'}>
                             <StaticImage
                                 src="../../assets/images/arturo.jpg"
                                 alt="A dinosaur"
@@ -53,8 +57,8 @@ const Text = () => {
                             />
                         </div>
                     </h2>
-                    <h2>&    Medu Moreno
-                        <div className="img">
+                    <h2 onMouseDown={() => showImgMe(!imgMe)}>&    Medu Moreno
+                        <div className={imgMe ? 'img showw' : 'img'}>
                             <StaticImage
                                 src="../../assets/images/medu.jpg"
                                 alt="A dinosaur"
@@ -79,10 +83,14 @@ const TextContainer = styled.section`
     margin-top: calc(120vh);
     color: white;
     position: relative;
+    @media (max-width: 680px) {
+        margin-top: 0vh;
+    }
     .fix {
         bottom: 40%;
         @media (max-width: 680px) {
-            bottom: 58%; 
+            bottom: auto;
+            top: 26%;
         }
     }
     h1 {
@@ -96,7 +104,12 @@ const TextContainer = styled.section`
         position: fixed;
         bottom: -50%;
         transition: bottom 500ms ease-in-out;
-        
+        @media (max-width: 680px) {
+            font-size: 30px;
+            bottom: auto;
+            top: 126%;
+            transition: top 500ms ease-in-out;
+        }
     }
     
     h2.subtitle {
@@ -109,7 +122,11 @@ const TextContainer = styled.section`
         padding-right: 100px;
         padding-bottom: 250px;
         @media (max-width: 680px) {
-            padding-bottom: 850px;
+            padding-bottom: 400px;
+            font-size: 26px;
+            line-height: 36px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
     }
 
@@ -134,6 +151,9 @@ const TextContainer = styled.section`
         text-decoration: underline;
         margin: 0 auto;
         display: block;
+        @media (max-width: 680px) {
+            font-size: 55px;
+        }
     }
     a {
         font-size: 6.5vw;
@@ -152,9 +172,12 @@ const TextContainer = styled.section`
         }
     }
     .who {
-        position: relative;
         @media (max-width: 680px) {
             margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         h2 {
             font-family: 'Trade Gothic Next LT Pro', sans-serif;
@@ -163,31 +186,52 @@ const TextContainer = styled.section`
             text-decoration: underline;
             display: block;
             cursor: pointer;
+            padding-bottom: 20px;
+            @media (max-width: 680px) {
+                font-size: 32px;
+            }
+            .showw {
+                display: block !important;
+            }
             &:hover {
                 .img {
-                    transform: translateY(-50%);
-                    transform: translateX(-50%);
-                    display: block !important;
+                    display: block;
                 }
             }
             &:nth-child(1) {
                 float: left;
                 margin-left: 50px;
+                @media (max-width: 680px) {
+                    float: none;
+                    margin: 0;
+                }
             }
             &:nth-child(2) {
                 float: right;
                 margin-right: 50px;
+                @media (max-width: 680px) {
+                    float: none;
+                    margin: 0;
+                }
             }
             &:nth-child(3) {
                 text-align: center;
-                padding: 100px 0 0 0;
+                padding: 130px 0 0 0;
+                @media (max-width: 680px) {
+                    padding-top: 0;
+                }
             }
             .img {
                 display: none;
-                position: absolute;
-                top: 0;
+                position: fixed;
+                top: 50%;
                 left: 50%;
-                transform: translateX(-50%);
+                transform: translate(-50%, -50%);
+                z-index: 5;
+                @media (max-width: 680px) {
+                    transform: scale(0.8) translate(-62%, -62%);
+
+                }
             }
         }
     }

@@ -269,6 +269,8 @@ const HeaderContainer = styled.header`
     .container {
         width: 100vw;
         overflow-x: hidden;
+        position: relative;
+        height: 100vh;
     }
 
     .img {
@@ -399,6 +401,9 @@ const HeaderContainer = styled.header`
         padding: 0 50px;
         transition: all 350ms ease-in;
         z-index: 1;
+        @media (max-width: 680px) {
+            padding: 0 30px;
+        }
     }
     .change {
         bottom: 94% !important;
